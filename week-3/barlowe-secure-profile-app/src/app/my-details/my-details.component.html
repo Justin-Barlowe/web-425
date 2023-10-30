@@ -1,0 +1,23 @@
+<!-- Name: Justin Barlowe -->
+<!-- File: my-details.component.html -->
+<!-- Description: HTML component file for details for enhanced profile app with data binding -->
+<!-- Date: 10/23/2023 -->
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <strong>Name:</strong> {{ myProfile.fullName }}
+  </li>
+  <li class="list-group-item">
+    <strong>Favorite Food:</strong> {{ myProfile.favoriteFood }}
+  </li>
+  <li class="list-group-item">
+    <strong>Favorite Color:</strong> {{ myProfile.favoriteColor }}
+  </li>
+  <li class="list-group-item">
+    <strong>Keywords</strong>
+    <!-- Iterate over keywords array and output results -->
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+    </span>
+ </li>
+</ul>
