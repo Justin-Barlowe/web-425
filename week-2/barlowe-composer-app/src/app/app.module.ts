@@ -1,3 +1,9 @@
+// Name: Justin Barlowe
+// File: app.module.ts
+// Description: Module file for the app component
+// Date: 10/25/2023
+
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
