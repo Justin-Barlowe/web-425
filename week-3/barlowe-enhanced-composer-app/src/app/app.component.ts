@@ -11,6 +11,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+// Exports the AppComponent class
 export class AppComponent {
   title = 'barlowe-composer-app';
   assignment: string = 'Exercise 3.2 - Passing Data to Routes, Part 1';

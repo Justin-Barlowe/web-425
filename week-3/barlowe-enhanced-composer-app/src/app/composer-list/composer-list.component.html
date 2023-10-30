@@ -21,6 +21,7 @@ Date: 10/24/2023 -->
     <!-- Loop over array of composers -->
     <tr *ngFor="let composer of composers">
       <td class="row">
+        <!-- Routerlink   -->
         <a routerLink="/composer-details/{{ composer.composerId }}">
           {{ composer.composerId }}
           </a>
