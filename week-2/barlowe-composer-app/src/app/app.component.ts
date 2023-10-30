@@ -1,3 +1,8 @@
+// Name: Justin Barlowe
+// File: app.component.ts
+// Description: Component file for the app component
+// Date: 10/25/2023
+
 import { Component } from '@angular/core';
 
 @Component({
