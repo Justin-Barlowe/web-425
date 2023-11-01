@@ -1,0 +1,25 @@
+<!-- Name: Justin Barlowe
+File: signin.component.html
+Description: HTML file for the signin component.
+Date: 10/30/2023 -->
+
+<div class="card signin-container">
+  <div class="card-body">
+    <h3 class="card-title">
+      Sign In
+    </h3>
+    <form action="" class="card-text">
+      <div class="form-group">
+        <label for="txtUserName">Username</label>
+        <input type="text" class="form-control" id="txtUserName" placeholder="Enter username">
+        <div class="form-group">
+          <label for="txtPassword">Password</label>
+          <input type="password" class="form-control" id="txtPassword" placeholder="Enter your password">
+          <div class="form-group pt-3">
+            <button class="btn btn-primary float-end" (click)="signin()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

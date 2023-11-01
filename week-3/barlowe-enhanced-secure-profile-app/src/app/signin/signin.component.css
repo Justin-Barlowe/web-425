@@ -1,0 +1,11 @@
+/* Name: Justin Barlowe
+File: signin.component.css
+Description: CSS file for the signin component.
+Date: 10/30/2023 */
+
+/* Styling for sign in container */
+.signin-container {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
