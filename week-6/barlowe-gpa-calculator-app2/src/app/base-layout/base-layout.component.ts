@@ -14,5 +14,5 @@ export class BaseLayoutComponent {
 assignment!: string;
 
   constructor() {
-this.assignment = 'Exercise 6.3 - Input Properties'; }
+this.assignment = 'Exercise 6.4 - Input Properties'; }
 }
