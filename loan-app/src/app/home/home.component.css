@@ -1,0 +1,10 @@
+
+
+.flex-container {
+  display: flex;
+}
+
+.left-div,
+.right-div {
+  flex: 1;
+}

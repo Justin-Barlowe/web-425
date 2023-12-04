@@ -1,0 +1,96 @@
+<!-- // Name: Justin Barlowe
+// File: home.component.html
+// Description: Home component html file for the loan application.
+// Date: 12/4/2023
+// Angular Version: 16.2.10 -->
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 left-div">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center; text-decoration: underline;">Loan Details</h2>
+
+          <!-- Create Form -->
+          <form [formGroup]="loanForm" (ngSubmit)="calculateLoan()">
+            <!-- Loan Amount Field -->
+            <div class="form-group">
+
+              <label for="loanAmount" class="input-label">Loan Amount</label>
+
+              <input type="text" class="form-control" id="loanAmount" formControlName="loanAmount">
+              <!-- Validate Form Field -->
+              <div *ngIf="loanForm.controls['loanAmount'].invalid && (loanForm.controls['loanAmount'].dirty || loanForm.controls['loanAmount'].touched)">
+                <small class="warning-color" >Please enter a valid number</small>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Interest Rate Field -->
+            <div class="form-group">
+              <label for="interestRate" class="input-label">Interest Rate</label>
+              <input type="text" class="form-control" id="interestRate" formControlName="interestRate">
+
+              <!-- Validate Form Field -->
+              <div *ngIf="loanForm.controls['interestRate'].invalid && (loanForm.controls['interestRate'].dirty || loanForm.controls['interestRate'].touched)">
+                <small class="warning-color">Please enter a valid number</small>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Number of Years Field -->
+            <div class="form-group">
+              <label for="numberOfYears" class="input-label">Number of Years</label>
+              <input type="text" class="form-control" id="numberOfYears" formControlName="numberOfYears">
+
+              <!-- Validate Form Field -->
+              <div *ngIf="loanForm.controls['numberOfYears'].invalid && (loanForm.controls['numberOfYears'].dirty || loanForm.controls['numberOfYears'].touched)">
+                <small class="warning-color">Please enter a valid number</small>
+              </div>
+            </div>
+            <br>
+
+            <!-- Submit Button, disable if the input isn't valid -->
+            <button type="submit" class="btn btn-primary bg-secondary" style="margin-right: 20px;" [disabled]="loanForm.invalid">Submit</button>
+            <!-- Reset Button, Resets the form fields -->
+            <a href="#" (click)="resetForm()">Reset Form</a>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loan Summary -->
+    <div class="col-lg-6 right-div">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center; text-decoration: underline;">Loan Summary</h2>
+          <br><br>
+
+          <!-- Monthly Payment -->
+          <div class="text-center">
+            <h3>Your Monthly Payment</h3>
+            <div id="monthlyPayment">
+              <span id="monthlyPayment" style="font-size: 30px;">{{ loanForm.get('monthlyPayment')?.value }}</span>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Interest Paid -->
+            <h3>Interest Paid</h3>
+            <div id="interestPaid">
+              <span id="totalInterestPaid" style="font-size: 30px;">{{ loanForm.get('totalInterestPaid')?.value }}</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
