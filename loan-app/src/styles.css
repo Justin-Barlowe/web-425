@@ -1,3 +1,11 @@
+/* Name: Justin Barlowe */
+/* File: styles.css */
+/* Description: CSS file for Loan_App */
+/* Date: 12/5/2023 */
+/* Bootstrap Version: 5.3.2 */
+
+
+/* Import bootstrap */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 /* Override default bootstrap colors with Ravenclaw colors*/
@@ -19,10 +27,12 @@
   border-color: var(--bs-secondary) !important;
 }
 
+/* Override link hover color */
 .nav-link:hover {
   color: var(--bs-secondary) !important;
 }
 
+/* Override warning color */
 .warning-color {
   color: var(--bs-warning) !important;
 }

@@ -4,10 +4,9 @@
 // Date: 12/4/2023
 // Angular Version: 16.2.10 -->
 
-
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-lg-6 left-div">
+    <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
           <h2 class="card-title" style="text-align: center; text-decoration: underline;">Loan Details</h2>
@@ -66,7 +65,7 @@
     </div>
 
     <!-- Loan Summary -->
-    <div class="col-lg-6 right-div">
+    <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
           <h2 class="card-title" style="text-align: center; text-decoration: underline;">Loan Summary</h2>
@@ -76,7 +75,7 @@
           <div class="text-center">
             <h3>Your Monthly Payment</h3>
             <div id="monthlyPayment">
-              <span id="monthlyPayment" style="font-size: 30px;">{{ loanForm.get('monthlyPayment')?.value }}</span>
+              <span id="monthlyPayment" style="font-size: 48px;">{{ loanForm.get('monthlyPayment')?.value }}</span>
             </div>
 
             <br>
@@ -85,7 +84,7 @@
             <!-- Interest Paid -->
             <h3>Interest Paid</h3>
             <div id="interestPaid">
-              <span id="totalInterestPaid" style="font-size: 30px;">{{ loanForm.get('totalInterestPaid')?.value }}</span>
+              <span id="totalInterestPaid" style="font-size: 48px;">{{ loanForm.get('totalInterestPaid')?.value }}</span>
             </div>
 
           </div>

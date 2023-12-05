@@ -28,7 +28,7 @@ ngOnInit() {
 }
 
 
-// Submit the form.
+// Submit function.
 onSubmit() {
   if (this.loanForm.valid) {
     this.calculateLoan();
